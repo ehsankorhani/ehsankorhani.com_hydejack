@@ -1,0 +1,8 @@
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
+theme: jekyll-theme-cayman
+title: Code Better
+description: In search for the meaning
+gems:
+ - jekyll-redirect-from
+excerpt_separator: <!--more-->

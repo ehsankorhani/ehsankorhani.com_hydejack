@@ -6,3 +6,5 @@ description: In search for the meaning
 gems:
  - jekyll-redirect-from
 excerpt_separator: <!--more-->
+github:
+  is_project_page: false

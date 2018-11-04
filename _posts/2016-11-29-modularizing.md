@@ -8,7 +8,7 @@ date: 2016-11-29
 
 All JavaScript codes can run inside Global Execution Context.
 This means that if we define variables and functions at the global level, then the other codes can access them, no matter if they are in different files.
-
+<!--more-->
 ```html
 <!DOCTYPE html>
 <html lang="en">

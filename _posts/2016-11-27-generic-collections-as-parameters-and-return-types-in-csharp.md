@@ -5,7 +5,7 @@ date: 2016-11-27
 ---
 
 Generic collections provide a convenient way to pass or retrieve data from methods. However, since .NET provides different types of collection, we should know which one to use for any given situation.
-
+<!--more-->
 ### Interfaces
 
 It is possible and sometimes recommended to use collections interfaces instead of the concrete implementation. This can provide more flexibility in coding.

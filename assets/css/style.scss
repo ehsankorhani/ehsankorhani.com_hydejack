@@ -2,3 +2,11 @@
 ---
 
 @import "{{ site.theme }}";
+
+ul.posts > li.single-post {
+  padding-bottom: 50px;
+}
+
+ul.posts > li.single-post > span.post-date {
+  padding-bottom: 50px;
+}

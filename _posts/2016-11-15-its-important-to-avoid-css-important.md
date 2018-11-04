@@ -10,7 +10,7 @@ I read this great article about [calculating CSS specificity](https://css-tricks
 > * For each ID value, apply 0,1,0,0 points
 > * For each class value (or pseudo-class or attribute selector), apply 0,0,1,0 points
 > * For each element reference, apply 0,0,0,1 point
-
+<!--more-->
 This is how should we go about giving specificity to our CSS codes.
 
 Try not to use !important as it breaks the above rule and makes it difficult to maintain and modify existing CSS codes.

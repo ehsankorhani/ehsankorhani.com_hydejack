@@ -20,7 +20,7 @@ This means that if we define variables and functions at the global level, then t
     </body>
 </html>
 ```
-
+<!--more-->
 file1.js:
 
 ```javascript

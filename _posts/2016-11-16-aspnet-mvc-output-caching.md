@@ -21,7 +21,7 @@ public class HomeController: Controller
     }
 }
 ```
-
+<!--more-->
 Duration is the amount of time in seconds that we want the application to preserve the output (html) of this controller for us.
 
 Therefore, after the first request that someone makes to this controller, whatever output it produces will stay in memory for 5 minutes. The rest of requests will only receive the same result even if the underlying data has been changed during this time.

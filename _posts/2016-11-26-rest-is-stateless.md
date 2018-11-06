@@ -7,7 +7,8 @@ date: 2016-11-22
 Web applications (over HTTP) are disconnected. This means that once the server sends data over the wire to the client it forgets about it. The client on the second call should remind the server of its state.
 <!--more-->
 
-<img class="img-align-right" src="../assets/images/explor2.jpg" alt="ASP.NET Session State">
+<img class="img-align-right" src="/assets/images/explor2.jpg" alt="ASP.NET Session State">
+
 Session state is a method to keep track of web application users. The server needs to store client data in some place and assign it to only that client. Therefore, it creates a unique id for every value for a single user, encrypts and return that back to the user. These encrypted data received back on later calls by the server. They were especially important in ASP.NET Web Forms for passing data between different pages.
 
 ### Server does not store data in REST architecture.

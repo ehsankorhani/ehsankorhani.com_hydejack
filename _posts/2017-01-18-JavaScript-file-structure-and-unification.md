@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "REST calls from back-end using RestSharp"
-date: 2017-01-10
+title: "JavaScript File Structure and Unification"
+date: 2017-01-18
 ---
 
 In the [Modularizing JavaScript Code](https://ehsankorhani.com/blog/2016/11/13/modularizing-javascript-code) post, I wrote about how to convert plain JavaScript codes into modules. (using Revealing Module Pattern).

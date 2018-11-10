@@ -22,7 +22,6 @@ This allows the collection to be enumerated.
 
 *IList* and *IDictionary* are both implementing ICollection and extending it with their own properties and methods.
 
-
 <img class="img-align-right" src="/assets/images/dotnet-collections.gif" alt=".NET Collections" />
 
 IList exposes methods such as IndexOf(T) or RemoveAt(int) to access and manipulate data at specific locations (index) in list. IDictionary<TKey, TValue> also provides methods to alter data using existing “Key”. If the “Key” does not exist the compiler will throw an error. Therefore, the recommended method in such cases is TryGetValue(TKey, TValue).

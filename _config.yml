@@ -8,3 +8,5 @@ gems:
 excerpt_separator: <!--more-->
 github:
   is_project_page: false
+# Google Analytics
+google_analytics: UA-120639223-1

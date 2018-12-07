@@ -3,8 +3,11 @@ permalink: /blog/:year/:month/:day/:title
 theme: jekyll-theme-cayman
 title: Code Better
 description: In search for the meaning
+paginate: 5
+paginate_path: "/blog/page:num/"
 gems:
  - jekyll-redirect-from
+ - jekyll-paginate
 excerpt_separator: <!--more-->
 github:
   is_project_page: false

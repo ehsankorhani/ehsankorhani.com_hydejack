@@ -3,7 +3,7 @@ layout: default
 redirect_from:
   - /
 ---
-<h1>{{ page.title }}</h1>
+<!--<h1>{{ page.title }}</h1>
 <ul class="posts">
   {% for post in site.posts %}
     <li class="single-post">
@@ -11,7 +11,7 @@ redirect_from:
       {{ post.excerpt }}
     </li>
   {% endfor %}
-</ul>
+</ul>-->
 <!-- This loops through the paginated posts -->
 {% for post in paginator.posts %}
   <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>

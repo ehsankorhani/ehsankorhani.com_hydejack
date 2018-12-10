@@ -3,10 +3,6 @@
 
 @import "{{ site.theme }}";
 
-h5 {
-  font-weight: bold;
-}
-
 ul.posts {
   list-style-type: none;
 }
@@ -30,4 +26,6 @@ img.img-align-right {
   margin: 0 0 1.5em 1.5em;
 }
 
-
+.pagination {
+  text-align: center;
+}

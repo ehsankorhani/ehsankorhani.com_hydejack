@@ -9,17 +9,17 @@ However, virtual machines consume a lot of our local resources and each installa
 
 Containers, on the other hand, are much more flexible and faster, require a lot less local machine resource and are easier to distribute.
 <!--more-->
-### Docker containers
+#### Docker containers
 
 Docker has made working with containers a breeze in Linux, Mac, and Windows.
 
 Just install the Docker machine and pull (download) and run the images inside the machine.
 
-### Docker for Microservice
+#### Docker for Microservice
 
 A solution based on Microservice architecture requires independent systems communicating with each other. Though you can use Azure or AWS to host those environments, that’s going to be costly for test cases. Docker enables you to create as many different environments as you wish or need easily on your local machine.
 
-### Docker for Deployment
+#### Docker for Deployment
 
 One of the common issues developers have always had was the difference between their local development environment and the deployment servers – installed modules, OS version, and etc.
 

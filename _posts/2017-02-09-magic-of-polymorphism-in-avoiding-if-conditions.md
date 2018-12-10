@@ -14,7 +14,7 @@ Probably the worst thing about conditional statements is that they are difficult
 
 Conditional statements are easy to write because that’s how our brains work but are often difficult to read. Especially when there are many conditions or when we make them nested.
 <!--more-->
-### OOP solution
+#### OOP solution
 
 OOP concepts can be difficult to grasp and one needs lots of practices in order to master it. Polymorphism which is considered one of the pillars of OOP can provide a neat solution to many decision-making situations.
 
@@ -22,7 +22,7 @@ It doesn’t mean you will write less code. On the contrary, you will often find
 
 The classic example of using polymorphism instead of if-statement is the Shape class and it’s Draw() method. But I am going to demonstrate a more practical instance.
 
-### Example: decision-making matrix
+#### Example: decision-making matrix
 
 In one case, I had a matrix of statuses that an entity could have. The entity had a current status, and this status could be changed to something else but not everything else (actually it was more complex than this but I skip those for sake of simplicity).
 
@@ -129,7 +129,7 @@ public class InProgress : Status
 }
 ```
 
-### Factory Pattern
+#### Factory Pattern
 
 So, how do we create a specific instance of *Status* class? Our calling code should be ignorant of the underlying structure, isn’t it?
 
@@ -154,7 +154,7 @@ public class StatusFactory
 
 The calling code simply calls *StatusFactory.GetStatus()* and passes whatever status it has got (based on our Enum) and get the right derived class from this factory method.
 
-### How to use?
+#### How to use?
 
 You saw that every derived class has its own collection of allowed changes, and it also knows it’s Previous and Next status.
 

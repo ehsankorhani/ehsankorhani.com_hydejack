@@ -8,7 +8,7 @@ In the [Modularizing JavaScript Code](https://ehsankorhani.com/blog/2016/11/13/m
 
 We used Revealing Module Pattern, but in fact, there are several patterns for modularizing js codes.
 
-### File Structure
+#### File Structure
 
 Modularizing can be done in a single js file, but it\’s recommended to split each module into a separate file. Doing so allows a better control over each module and facilitates working as teams on a project.
 <!--more-->
@@ -24,7 +24,7 @@ for example; customerService.
 
 These are borrowed from AngularJs conventions.
 
-### Folder Structure
+#### Folder Structure
 
 Again, there are different views on that.
 
@@ -38,11 +38,11 @@ Another approach is to separate different sections by their responsibility.
 
 The correct choice depends on the nature of the project, however, I personally prefer the 2nd approach.
 
-### Dependency Order
+#### Dependency Order
 
 Despite the fact that JavaScript moves any variable declaration to the top of the page – a behavior that we call Hoisting – still it would be safer to code in order of usage. So, when we add js files to a web page we better place them in an order that later source codes can access former ones.
 
-### Unification
+#### Unification
 
 We learned that splitting JavaScript files into multiple files will make development easier. But one important thing to consider is that many files, means many server requests which is not so pleasant on the server side.
 

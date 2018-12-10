@@ -3,9 +3,11 @@ layout: default
 ---
 <div class="title">
     <a class="extra" href="/blog">home</a>
+    <span> | </span>
+    <a class="extra" href="javascript:history.back()">back</a>
 </div>
-<h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
+<h2 class="page-title">{{ page.title }}</h2>
+<p class="meta post-date">{{ page.date | date_to_string }}</p>
 
 <div class="post">
   {{ content }}

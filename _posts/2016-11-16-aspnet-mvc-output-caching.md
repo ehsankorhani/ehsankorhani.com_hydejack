@@ -8,7 +8,7 @@ We can follow every kind of performance tuning tips & tricks on server side code
 
 This is partly can be done by utilizing caching mechanism.
 
-### OutputCache Attribute
+#### OutputCache Attribute
 the OutputCache attribute exists on System.Web.Mvc namespace and provides a simple and quick way for the developers to set their caching setting on any controller (or entire class if required).
 
 ```csharp
@@ -26,7 +26,7 @@ Duration is the amount of time in seconds that we want the application to preser
 
 Therefore, after the first request that someone makes to this controller, whatever output it produces will stay in memory for 5 minutes. The rest of requests will only receive the same result even if the underlying data has been changed during this time.
 
-### VaryByParam
+#### VaryByParam
 When set to “none” ASP.NET will create only one cache for the controller.
 
 ```csharp

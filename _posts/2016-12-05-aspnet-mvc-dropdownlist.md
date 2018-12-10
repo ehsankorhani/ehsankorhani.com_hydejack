@@ -110,7 +110,7 @@ $(document).ready(function () {
 
 Note that all the above code should go into the corresponding App, Controller and Service modules. I also have removed all the complexities and this is just the bare bone of should have been done which is very convenient.
 
-### More sophisticated model for dropdown
+#### More sophisticated model for dropdown
 
 As I mentioned earlier you can define your own type of “SelectListItem” to gain more control over it. So we can have:
 

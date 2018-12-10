@@ -6,7 +6,7 @@ date: 2017-01-05
 
 Compass was a wonderful framework which unfortunately no longer is maintained. But the existing project can still be used by front-end developers.
 
-### Twitter Bootstrap vs. Compass
+#### Twitter Bootstrap vs. Compass
 
 Bootstrap is a CSS framework. It gives you a set of predefined styles. For instance, different types of Forms or Grids.
 <!--more-->
@@ -14,7 +14,7 @@ On the other hand, [Compass](http://compass-style.org/) is a CSS authoring frame
 
 Alternatively you can import just the module you require: @import “compass/utilities”;
 
-### How to use
+#### How to use
 
 Suppose you want to create a bullet list with an image instead of default symbol;
 
@@ -33,7 +33,7 @@ ul.pretty
 
 The above code will affect any ul decorated with class pretty.
 
-### Spriting
+#### Spriting
 
 Probably the best part of Compass is its power to convert you split images into Sprites.
 
@@ -51,7 +51,7 @@ Just put all your icons/images in a folder. Then import the appropriate module, 
 Note that folder name should be similar to the middle word in @include command.
 That’s it. Compass will generate the sprite and corresponding CSS code.
 
-### How to use
+#### How to use
 
 You are now able to get width & height of any image/icon by its original name if you want to go the hard way and write your own CSS code:
 

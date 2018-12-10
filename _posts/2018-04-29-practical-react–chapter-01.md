@@ -4,7 +4,7 @@ title: "Practical React – Chapter 1"
 date: 2018-04-29
 ---
 
-### Hello React
+#### Hello React
 The simplest way to create a React app is by adding React scripts to an HTML page.
 
 You need to include react.js and react-dom.js to page Header (use the minified version when deploying to the production environment):
@@ -44,7 +44,7 @@ React needs to render to a DOM element. therefore, add an element with ID to you
 
 For the time being, because we are not going to use jQuery Ready function, we need to add our app.js file after all DOM elements to ensure they have been rendered inside the browser.
 
-### Developing with React
+#### Developing with React
 
 Add the following code snippet to the app.js:
 

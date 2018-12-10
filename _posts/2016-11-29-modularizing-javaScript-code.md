@@ -4,7 +4,7 @@ title: "Modularizing JavaScript Code"
 date: 2016-11-29
 ---
 
-### Global Namespace Pollution
+#### Global Namespace Pollution
 
 All JavaScript codes can run inside Global Execution Context.
 This means that if we define variables and functions at the global level, then the other codes can access them, no matter if they are in different files.
@@ -38,7 +38,7 @@ even defining a “use strict” in one file can affect others as well.
 
 However, variables defined inside a function are not accessible from other codes. Thus, a number of patterns have been proposed to overcome the issue.
 
-### Revealing Module Pattern
+#### Revealing Module Pattern
 
 The pattern simply consists of an Immediately-Invoked Function Expression:
 

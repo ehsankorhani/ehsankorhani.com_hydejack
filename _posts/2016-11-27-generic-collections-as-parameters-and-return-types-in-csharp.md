@@ -6,11 +6,11 @@ date: 2016-11-27
 
 Generic collections provide a convenient way to pass or retrieve data from methods. However, since .NET provides different types of collection, we should know which one to use for any given situation.
 <!--more-->
-### Interfaces
+#### Interfaces
 
 It is possible and sometimes recommended to use collections interfaces instead of the concrete implementation. This can provide more flexibility in coding.
 
-### Inheritance
+#### Inheritance
 
 *IEnumerable* is the base generic interface in .NET collections. All other collections have implemented this one.
 
@@ -26,7 +26,7 @@ This allows the collection to be enumerated.
 
 IList exposes methods such as IndexOf(T) or RemoveAt(int) to access and manipulate data at specific locations (index) in list. IDictionary<TKey, TValue> also provides methods to alter data using existing “Key”. If the “Key” does not exist the compiler will throw an error. Therefore, the recommended method in such cases is TryGetValue(TKey, TValue).
 
-### Using collection interface as Parameter type
+#### Using collection interface as Parameter type
 
 A method can define the accepting parameter type to be of interface type based on what it really needs to do with the collection.
 
@@ -51,7 +51,7 @@ var countries = new List
 Add(countries);
 ```
 
-### Using collection interface as Return type
+#### Using collection interface as Return type
 
 A method can return a generic collection interface:
 

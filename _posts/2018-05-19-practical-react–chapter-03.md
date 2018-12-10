@@ -4,7 +4,7 @@ title: "Practical React – Chapter 3"
 date: 2018-05-19
 ---
 
-### An introduction to JSX
+#### An introduction to JSX
 JSX or JavaScript XML is an HTML like language React uses to create the Component’s View. It’s pretty simple if you are already familiar with basic HTML with few caveats regarding JavaScript keywords.
 
 For example, “class” is a keyword, and thus you will use “className” to refer to CSS inside your JSX.
@@ -23,10 +23,10 @@ const template = (
 );
 ```
 
-#### Single Root
+##### Single Root
 Every JSX template should have only one single root. In the example above, you can see that a pair of “div” elements wraps the whole component. The adjacent “label” and “button” elements are also wrapped inside another div.
 
-#### Expressions
+##### Expressions
 JavaScript code and expressions can be interpolated inside a pair of Curly Brackets or `{ }`.
 
 ```javascript
@@ -46,7 +46,7 @@ const element = (
 );
 ```
 
-#### Conditional Rendering
+##### Conditional Rendering
 Conditional rendering in JSX allows React to render a piece of view based on a condition.
 
 _Short-Circuiting_ is a feature in JavaScript that makes a statement evaluate to its last evaluated operator. So, for the `||` operator the first Truthy value will be returned and `&&` will return its last Truthy value.

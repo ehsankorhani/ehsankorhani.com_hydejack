@@ -8,7 +8,7 @@ redirect_from:
 <ul class="posts">
   {% for post in paginator.posts %}
     <li class="single-post">
-      <span class="post-date">{{ post.date | date_to_string }}</span> » <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
+      <span class="post-date">{{ post.date | date_to_string }}</span> » <a class="post-title" href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
       {{ post.excerpt }}
     </li>
   {% endfor %}

@@ -4,7 +4,7 @@ title: "C# Generic Class and Methods"
 date: 2016-11-30
 ---
 
-### Why Generics?
+#### Why Generics?
 
 Suppose that we want to create a method that accepts a class as the parameter and performs some general operations on that. We don\’t know what type of classes will be sent to this method.
 <!--more-->

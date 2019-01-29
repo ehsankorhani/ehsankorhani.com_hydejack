@@ -64,16 +64,65 @@ date: 2019-01-27
         -- commit
         -- push
     * always pull before push
-    -- make changes in remote
-    -- make changes in local
-    -- git pull
+    -- git pull: when have different HEAD
+        - make changes in remote
+        - make changes in local
+        -- git pull
         - Your local changes to the following files would be overwritten by merge
         - commit changes
         - git pull again
         - resolve the conflict
         - save, commit, push
         - view remote repo
+    -- git push: when have different HEAD at remote
+        - make changes at remote
+        - make changes at local
+        -- git push origin master
+        - Error!!!
+            - rebase: git push origin master --force
+    
+    -- what is pull: fetch + merge
+        - change remote
+        - change local and commit
+        -- git fetch
+        -- git merge
 
+    -- reset changes to remote HEAD
+        -- git fetch origin
+        -- git reset --hard origin/master
 
+    -- reset changes to last HEAD
+        -- git reset --hard HEAD~1
 
---- git config
+    * omitting --hard will leave the files but moves the pointer
+
+    -- Reverting: forward moving undo operation
+        -make an opposite change and commits
+        - make some change
+        - commit change
+        -- git revert <commit_id>
+        - provide comit message
+        - check it with git log
+
+    -- Stashing
+        - make modification
+        - make modification to same file in origin
+        -- git pull
+        - error!
+        - stash local file:
+            -- (git stash)
+            -- git stash push -m "stash js" js/app.js
+            -- git stash push -- path/to/folder
+        -- git pull
+
+    -- Reapply stash
+        -- git stash list
+        -- git stash pop (last one)
+            or =
+        -- git stash apply stash@{0}
+
+    -- delete last stash
+        -- git stash drop stash@{1}
+    -- delete stash ALL
+        -- git stash clear
+--- git config 

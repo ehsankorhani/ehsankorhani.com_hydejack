@@ -1,12 +1,22 @@
 ---
 layout: post
-title: "git Fundamentals"
+title: "Git Fundamentals"
 date: 2019-01-27
 ---
-- Development without source/version control
 
-- Version Control Systems
-- 3 phases:
+## Git Fundamentals
+
+##### Development without version control softwares
+* Backup files
+* Comments
+* ...
+
+##### Two types of version control software
+1. Centeralized
+2. Distributed
+
+##### Version Control Systems
+3 phases
     - git basic commands (demo project)
     - git GUI interface
     - git flow
@@ -21,6 +31,12 @@ date: 2019-01-27
             - to create git in the specified directory
     
     - .git folder will be created to track the changes
+
+    - Config
+        -- git config --global --edit
+        -- git config --local --edit
+        -- git config --global user.name "username"
+        -- git config --global user.password "password"
 
     - Create a demo project
         - simple html website
@@ -87,6 +103,9 @@ date: 2019-01-27
         -- git fetch
         -- git merge
 
+    -- replace local changes with HEAD
+        -- git checkout -- <file>
+
     -- reset changes to remote HEAD
         -- git fetch origin
         -- git reset --hard origin/master
@@ -125,4 +144,70 @@ date: 2019-01-27
         -- git stash drop stash@{1}
     -- delete stash ALL
         -- git stash clear
---- git config 
+
+    -- What if you don't want git to track your files or folders?
+        - create a file on root and a folder with file
+        - git recognized them as untracked
+        --.gitignore
+        - add files and folders
+        - new files will be removed from git list
+
+    -- Branching
+        - best practice:
+        - master should remain clean.
+        - dev branch for developers
+        - for each task create a feature_branch
+
+        - naming convention
+            -<type>/<name>
+            bug    - Code changes linked to a known issue.
+            feat   - New feature.
+            hotfix - Quick fixes to the codebase.
+            junk   - Experiments (will never be merged).
+
+            -example
+            - feat/employer-360-view
+        
+        - create dev branch
+            - from github
+            - Branch -> dev
+            - on local:
+            -- git fetch
+            -- git ckeckout dev
+
+            - on local: (based on current HEAD)
+            -- git branch feat/new-task
+            -- git checkout feat/new-task
+            or =
+            -- git checkout -b feat/new-task
+            
+            - push branch
+            -- git push origin feat/new-task
+
+        - Merge
+            - merging into your branch:
+                - make changes in dev
+                - stage and commit
+                - checkout feature branch
+                -- git merge dev
+
+            - merge to remote - pull request
+                - make changes in branch
+                - push to remote:
+                -- git push origin feat/new-task
+
+                - check github
+                - go to feature branch
+                -> new pull request
+                - go to pull requests
+                - review code
+                -> Select type of Merge (merge / squash / rebase)
+                -> Confirm request      
+                * you have the option to delete the branch
+                * delete the local branch independently
+
+            -- git diff master dev
+            -- git log
+            -- VS Code gitlens extension
+            -- gitk
+            -- Atlassian 

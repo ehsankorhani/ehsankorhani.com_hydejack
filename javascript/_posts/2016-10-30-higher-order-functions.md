@@ -2,7 +2,7 @@
 layout: post
 title: Higher-order Functions
 description: >
-  This is a sample post.
+  An introduction to functional programming.
 author: ehsan
 excerpt_separator: <!--more-->
 ---

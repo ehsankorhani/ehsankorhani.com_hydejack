@@ -1,2 +1,2 @@
 # ehsankorhani.com
-blog
+Ehsan Korhani blog

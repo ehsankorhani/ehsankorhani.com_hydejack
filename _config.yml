@@ -9,7 +9,7 @@ url:                   https://ehsankorhani.com
 # Use the empty string '' otherwise.
 # For GitHub project sites, this is usually the name of the project,
 # e.g. `/hydejack`.
-baseurl:               '/blog'
+baseurl:               '/'
 
 
 lang:                  en

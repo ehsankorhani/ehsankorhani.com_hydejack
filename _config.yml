@@ -7,9 +7,8 @@ url:                   https://ehsankorhani.com
 # When your site sits in a subdirectory, set to /<name of directory>
 # (with leading /, but without the < >).
 # Use the empty string '' otherwise.
-# For GitHub project sites, this is usually the name of the project,
-# e.g. `/hydejack`.
-baseurl:               '/'
+# For GitHub project sites, this is usually the name of the project.
+baseurl:               '/blog'
 
 
 lang:                  en

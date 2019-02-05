@@ -8,7 +8,7 @@ url:                   https://ehsankorhani.com
 # (with leading /, but without the < >).
 # Use the empty string '' otherwise.
 # For GitHub project sites, this is usually the name of the project.
-baseurl:               '/blog'
+baseurl:               '/'
 
 
 lang:                  en

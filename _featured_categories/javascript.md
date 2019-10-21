@@ -3,7 +3,7 @@ layout: list
 title: JavaScript
 slug: javascript
 menu: true
-order: 2
+order: 3
 description: >
-  JavaScript, Node.js, React, and everything related.
+  Node, React and everything else which is based on JavaScript
 ---

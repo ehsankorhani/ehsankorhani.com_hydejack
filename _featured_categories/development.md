@@ -1,9 +1,9 @@
 ---
 layout: list
-title: Software Development
+title: Development
 slug: development
 menu: true
-order: 6
+order: 2
 description: >
-  Software Development and Engineering.
+  Genral developemtn practices
 ---

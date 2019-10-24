@@ -50,7 +50,7 @@ Keep in mind that while ```null``` is an (special) _object_, it evaluates as ```
 
 ##### References
 
-[The Modern JavaScript Tutorial](http://javascript.info/)
-[You Don't Know JS Yet (book series) - 2nd Edition](https://github.com/getify/You-Dont-Know-JS)
-[Eloquent JavaScript](http://eloquentjavascript.net/)
-[DOM Enlightenment](http://domenlightenment.com/)
+[The Modern JavaScript Tutorial](http://javascript.info/) <br />
+[You Don't Know JS Yet (book series) - 2nd Edition](https://github.com/getify/You-Dont-Know-JS) <br />
+[Eloquent JavaScript](http://eloquentjavascript.net/) <br />
+[DOM Enlightenment](http://domenlightenment.com/) <br />

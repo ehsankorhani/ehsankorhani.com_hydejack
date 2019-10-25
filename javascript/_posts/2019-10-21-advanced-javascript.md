@@ -10,6 +10,10 @@ excerpt_separator: <!--more-->
 
 This article is going to discuss a more advanced topics of JavaScript language. This is journey to examine the different, wierd or specific features of JavaScript and also to practice the better ways to coding.
 
+**Table if Contents**
+* [Null vs Undefined](https://ehsankorhani.com/javascript/2019-10-21-advanced-javascript/#null-vs-undefined)
+* [Var vs Let vs Const](https://ehsankorhani.com/javascript/2019-10-21-advanced-javascript/#var-vs-let-vs-const)
+
 <!--more-->
 
 ##### Null vs Undefined

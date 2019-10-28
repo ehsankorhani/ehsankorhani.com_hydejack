@@ -13,6 +13,7 @@ This article is going to discuss a more advanced topics of JavaScript language. 
 **Table if Contents**
 * [Null vs Undefined](https://ehsankorhani.com/javascript/2019-10-21-advanced-javascript/#null-vs-undefined)
 * [Var vs Let vs Const](https://ehsankorhani.com/javascript/2019-10-21-advanced-javascript/#var-vs-let-vs-const)
+* [Type conversion with operators](https://ehsankorhani.com/javascript/2019-10-21-advanced-javascript/#type-conversion-with-operators)
 
 <!--more-->
 
@@ -128,6 +129,40 @@ const arr = [];
 obj.foo = 'some value';
 arr.push('another value');
 ```
+
+---
+
+#### Type conversion with operators
+
+Numeric conversion happens in mathematical functions and expressions automatically:
+
+```javascript
+console.log('10' - '5'); // 5
+console.log('10' * '5'); // 50
+console.log('10' / '5'); // 2
+
+console.log('10' - 5); // 5
+console.log(10 * '5'); // 50
+```
+
+Things are different when using ```+``` to add values:
+
+```javascript
+console.log(10 + 5); // 15
+console.log('10' + 5); // 105
+console.log(10 + '5'); // 105
+console.log('10' + '5'); // 105
+```
+
+Because ```+``` is a string concatenation operator and converts integers to string in the examples above.
+
+However it can be used to convert string into integer as well:
+
+```javascript
+console.log(+'10'); // 10 (int)
+```
+
+Weird but useful!
 
 ---
 

@@ -52,7 +52,7 @@ Keep in mind that while ```null``` is an (special) _object_, it evaluates as ```
 
 ---
 ##### Var vs Let vs Const
-**Best practice** Always use ```const```, unless you have a good reason for using ```let```.
+**Best practice** Always use ```const```. Start declarations with ```const```. Change it to ```let``` if later on you found out that the value needs to be changed.
 
 Prior to ES6, a JavaScript code could have been written in _no strict mode_. Meaning, there was no need to declare a variable. However, this was not recommended, and the programmers were advised to write ```'use strict';``` at top of code or module.
 
@@ -60,7 +60,8 @@ from ES6 onward the JavaScript is always in strict mode. ```let``` and ```const`
 
 ```const``` is obviously used to declare _constants_. And ```let``` is almost like ```var```. Almost, because there is an slight difference between these two keywords:
 
-1. Hoisting
+* Hoisting
+
 Variables declared with ```var``` hoisted to top of the function.
 
 ```javascript
@@ -77,7 +78,6 @@ greeting('Alfie Atkins');
 will print:
 ```bash
 undefined "at top." # because declarations are hoisted, but assignments are not.
-
 Hello Alfie Atkins at bottom.
 ```
 
@@ -85,7 +85,7 @@ but,
 
 ```javascript
 function greeting(name) {
-  console.log(phrase, 'at top.');
+  console.log(phrase, 'at top.'); // ReferenceError
 
   let phrase = `Hello ${name}`;
 
@@ -95,9 +95,8 @@ function greeting(name) {
 greeting('Alfie Atkins');
 ```
 
-will raise a _ReferenceError_.
 
-2. ```var``` does not have a block scope.
+* ```var``` does not have a block scope.
 
 Therefore, a variable declared inside an ```if``` statement or ```for``` loop can be accessed outside of that block.
 
@@ -112,6 +111,23 @@ console.log(lname); // Uncaught ReferenceError: lname is not defined
 ```
 
 This is the real reason why ```let``` was introduced instead if old ```var```.
+
+**Note:**
+
+- Constant cannot change through re-assignment
+- Constant cannot be re-declared
+
+It creates a _read-only reference_ to a value.
+
+But the value is still mutable:
+
+```javascript
+const obj = {};
+const arr = [];
+
+obj.foo = 'some value';
+arr.push('another value');
+```
 
 ---
 

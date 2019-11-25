@@ -14,6 +14,7 @@ This article is going to discuss a more advanced topics of JavaScript language. 
 * [Null vs Undefined](https://ehsankorhani.com/javascript/2019-10-21-advanced-javascript/#null-vs-undefined)
 * [Var vs Let vs Const](https://ehsankorhani.com/javascript/2019-10-21-advanced-javascript/#var-vs-let-vs-const)
 * [Type conversion with operators](https://ehsankorhani.com/javascript/2019-10-21-advanced-javascript/#type-conversion-with-operators)
+* [Comparison & Strict equality](https://ehsankorhani.com/javascript/2019-10-21-advanced-javascript/#comparison-and-strict-equality)
 
 <!--more-->
 
@@ -163,6 +164,38 @@ console.log(+'10'); // 10 (int)
 ```
 
 Weird but useful!
+
+---
+
+#### Comparison and Strict equality
+**Best practice** Always try to use ```===``` and avoid greater or lesser comparison when variable can have ```null``` or ```undefined``` values.
+
+** Strict equality (and inequality) was added later to JavaScript in a response to troubles with normal ```==``` operator.
+This operator along with ```!=```, ```>```, ```>=```, ```<``` and ```<=``` perform a type cast before the operation and this can lead to unexpected behaviors.
+
+##### ```null``` casts to 0
+```null``` is not equal to 0 in simple equality:
+```js
+null == 0; // false
+```
+
+but gets converted to 0 in lesser or greater comparison:
+```js
+null > 0;  // false
+null >= 0; // true
+```
+
+##### ```undefined``` casts to ```NaN```
+```js
+undefined == 0; // false
+```
+
+but gets converted to 0 in lesser or greater comparison:
+```js
+undefined > 0;  // false
+undefined < 0; // false
+```
+
 
 ---
 

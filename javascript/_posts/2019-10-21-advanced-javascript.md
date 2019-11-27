@@ -186,7 +186,7 @@ null >= 0; // true
 ```
 
 **```undefined``` casts to ```NaN```**
-```js
+```javascript
 undefined == 0; // false
 ```
 
